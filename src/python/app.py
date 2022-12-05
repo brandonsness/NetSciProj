@@ -29,7 +29,7 @@ def handleUsers():
         steam_ids = requestJson['users']
         recent = requestJson['playedRecent']
         timeCheck = requestJson['useTime']
-        time_threshold = requestJson['threshold']
+        time_threshold = float(requestJson['threshold'])
 
         game_id_map = {}
         owned_count = {}
